@@ -1,0 +1,13 @@
+.user-item {
+  background-color: var(--one-dark-magenta);
+  color: var(--one-dark-gray);
+
+  width: 95%;
+  margin: 0.625rem auto;
+  padding: 0.5rem 0;
+
+  border-radius: 0.25rem;
+
+  font-size: 1.5rem;
+  text-align: center;
+}
