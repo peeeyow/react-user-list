@@ -1,0 +1,7 @@
+.item-list {
+  background-color: var(--one-dark-blue);
+}
+
+.item-list ul {
+  list-style: none;
+}
