@@ -1,0 +1,17 @@
+.user-form {
+  background-color: var(--one-dark-light-blue);
+  color: var(--one-dark-black);
+  font-size: 1.5rem;
+}
+.user-form__section {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+
+.user-form__section label {
+  padding-bottom: 10px;
+}
+.user-form__button {
+  background-color: var(--one-dark-green);
+}
