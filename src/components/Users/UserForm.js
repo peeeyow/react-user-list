@@ -5,7 +5,7 @@ import styles from "./UserForm.module.css";
 
 export default function UserForm(props) {
   const [username, setUsername] = useState("");
-  const [age, setAge] = useState("0");
+  const [age, setAge] = useState("");
   const onUsernameChangeHandler = (event) => {
     setUsername(event.target.value);
   };
@@ -19,7 +19,7 @@ export default function UserForm(props) {
     } else {
       props.onAddUser({ username, age: Number(age) });
       setUsername("");
-      setAge("0");
+      setAge("");
     }
   };
   return (
