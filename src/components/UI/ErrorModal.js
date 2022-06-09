@@ -1,8 +1,9 @@
 import styles from "./ErrorModal.module.css";
 import Button from "./Button";
 import Card from "./Card";
+import ReactDOM from "react-dom";
 
-export default function ErrorModal(props) {
+const Backdrop = (props) => {
   return (
     <div className={styles["modal__background"]} onClick={props.onClick}>
       <Card className={styles["modal__container"]}>
@@ -19,5 +20,20 @@ export default function ErrorModal(props) {
         </footer>
       </Card>
     </div>
+  );
+};
+
+export default function ErrorModal(props) {
+  return (
+    <>
+      {ReactDOM.createPortal(
+        <Backdrop
+          onClick={props.onClick}
+          title={props.title}
+          message={props.message}
+        />,
+        document.getElementById("backdrop-root")
+      )}
+    </>
   );
 }
